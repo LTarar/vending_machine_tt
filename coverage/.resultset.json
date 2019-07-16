@@ -1,0 +1,19 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/student/Dropbox/Projects/cleo_tt/spec/vending_machine_spec.rb": [
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/student/Dropbox/Projects/cleo_tt/lib/vending_machine.rb": [
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1563292893
+  }
+}
