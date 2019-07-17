@@ -14,4 +14,17 @@ describe Product do
   it 'checks for a product quantity' do
     expect(product.quantity).to eq 10
   end
+
+  describe "#release" do
+    it 'decreases the quantity of a product' do
+      expect { product.release(1) }.to change { product.quantity }.from(10).to(9)
+    end
+  end
+
+  describe "#reload" do
+    it 'increases the quantity of a product' do
+      expect { product.reload(2) }.to change { product.quantity }.from(10).to(12)
+    end
+  end
+
 end
