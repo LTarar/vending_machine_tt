@@ -9,5 +9,9 @@ class Coin
   def release(amount)
     @quantity -= amount
   end
+
+  def reload(amount)
+    @quantity += amount
+  end
   
 end

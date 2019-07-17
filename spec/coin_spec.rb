@@ -17,4 +17,10 @@ describe Coin do
     end
   end
 
+  describe "#reload" do
+    it 'increases the quantity of a coin' do
+      expect { coin.reload(2) }.to change { coin.quantity }.from(10).to(12)
+    end
+  end
+
 end
