@@ -1,8 +1,8 @@
 class Coin
-  attr_reader :denomination, :quantity
+  attr_reader :value, :quantity
 
-  def initialize(denomination,quantity=10)
-    @denomination = denomination
+  def initialize(value,quantity=10)
+    @value = value
     @quantity = quantity
   end
 

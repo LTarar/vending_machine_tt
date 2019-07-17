@@ -5,6 +5,28 @@ class Change
     @coins = default_coins
   end
 
+  def release_coin(denomination,amount)
+    counter = 0
+    @coins.each_with_index do |coin, index|
+      if coin.value == denomination
+        counter = index
+      end
+    end
+    coin = @coins[counter]
+    coin.release(amount)
+  end
+
+  def insert_coin(denomination,amount)
+    counter = 0
+    @coins.each_with_index do |coin, index|
+      if coin.value == denomination
+        counter = index
+      end
+    end
+    coin = @coins[counter]
+    coin.reload(amount)
+  end
+
   private
 
   def default_coins

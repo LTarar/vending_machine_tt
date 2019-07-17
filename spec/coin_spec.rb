@@ -4,7 +4,7 @@ describe Coin do
   subject(:coin) {Coin.new(1)}
 
   it 'checks for coin denomination' do
-    expect(coin.denomination).to eq 1
+    expect(coin.value).to eq 1
   end
 
   it 'checks for coin quantity' do
