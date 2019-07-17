@@ -1,6 +1,28 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/student/Dropbox/Projects/cleo_tt/spec/coin_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Dropbox/Projects/cleo_tt/lib/coin.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/student/Dropbox/Projects/cleo_tt/spec/product_spec.rb": [
         1,
         null,
@@ -45,7 +67,6 @@
         null,
         1,
         1,
-        1,
         null,
         null
       ],
@@ -75,6 +96,6 @@
         null
       ]
     },
-    "timestamp": 1563353876
+    "timestamp": 1563354854
   }
 }

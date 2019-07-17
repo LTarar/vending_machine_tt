@@ -9,7 +9,6 @@ describe VendingMachine do
   end
 
   it 'checks if vending machine has products in the array' do
-    p vending_machine.products[0]
     expect(vending_machine.products[0]).to be_an_instance_of(Product)
   end
 end
