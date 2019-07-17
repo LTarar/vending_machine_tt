@@ -14,24 +14,24 @@ class VendingMachine
 
   def default_products
     [
-      Product.new('Coke',70,10),
-      Product.new('Pepsi',60,10), 
-      Product.new('7up',55,10),
-      Product.new('Fanta',55,10),
-      Product.new('Water',40,10)
+      Product.new('Coke',70),
+      Product.new('Pepsi',60), 
+      Product.new('7up',55),
+      Product.new('Fanta',55),
+      Product.new('Water',40)
     ]
   end
 
   def default_coins
     [
-      Coin.new(1,10),
-      Coin.new(2,10),
-      Coin.new(5,10),
-      Coin.new(10,10),
-      Coin.new(20,10),
-      Coin.new(50,10),
-      Coin.new(100,10),
-      Coin.new(200,10),
+      Coin.new(1),
+      Coin.new(2),
+      Coin.new(5),
+      Coin.new(10),
+      Coin.new(20),
+      Coin.new(50),
+      Coin.new(100),
+      Coin.new(200),
     ]
   end
 
