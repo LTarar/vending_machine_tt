@@ -15,6 +15,12 @@ class VendingMachine
     item
   end
 
+  def reload_item(index,amount)
+    item = @products[index]
+    item.reload(amount)
+    item
+  end
+
   private
 
   def default_products

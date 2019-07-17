@@ -7,6 +7,15 @@ describe VendingMachine do
     it 'releases the selected item' do
       item_released = vending_machine.release_item(2)
       expect(item_released.name).to eq '7up'
+      expect(item_released.quantity).to eq 9
+    end
+  end
+
+  describe "#reload_item" do
+    it 'reloads the selected item' do
+      item_reloaded = vending_machine.reload_item(1,5)
+      expect(item_reloaded.name).to eq 'Pepsi'
+      expect(item_reloaded.quantity).to eq 15
     end
   end
 
