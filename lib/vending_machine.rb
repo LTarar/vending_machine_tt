@@ -1,6 +1,6 @@
-require 'product'
-require 'coin'
-require 'change'
+# require 'product'
+# require 'coin'
+# require 'change'
 
 class VendingMachine
   attr_reader :products, :coins
@@ -8,6 +8,12 @@ class VendingMachine
   def initialize
     @products = default_products
     @coins = Change.new
+  end
+
+  def display_products 
+    @products.each { |product|
+      product
+    }
   end
 
   def release_item(index,payment)
@@ -33,18 +39,5 @@ class VendingMachine
       Product.new('Water',40)
     ]
   end
-
-  # def default_coins
-  #   [
-  #     Coin.new(1),
-  #     Coin.new(2),
-  #     Coin.new(5),
-  #     Coin.new(10),
-  #     Coin.new(20),
-  #     Coin.new(50),
-  #     Coin.new(100),
-  #     Coin.new(200),
-  #   ]
-  # end
 
 end

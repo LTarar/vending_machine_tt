@@ -29,6 +29,12 @@ describe VendingMachine do
     end
   end
 
+  describe "#display_products" do
+    it "displays the list of the products available" do
+      expect(vending_machine.display_products).to be_an(Array)
+    end
+  end
+
   # describe "#coins" do
   #   it 'checks if vending machine has an array of coins' do
   #     # p vending_machine.coins
