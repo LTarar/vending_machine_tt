@@ -10,4 +10,11 @@ describe Coin do
   it 'checks for coin quantity' do
     expect(coin.quantity).to eq 10
   end
+
+  describe "#release" do
+    it 'decreases the quantity of a coin' do
+      expect { coin.release(3) }.to change { coin.quantity }.from(10).to(7)
+    end
+  end
+
 end

@@ -5,5 +5,9 @@ class Coin
     @denomination = denomination
     @quantity = quantity
   end
+
+  def release(amount)
+    @quantity -= amount
+  end
   
 end
