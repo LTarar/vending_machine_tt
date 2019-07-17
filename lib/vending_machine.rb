@@ -1,15 +1,26 @@
 require 'product'
+require 'coin'
 
 class VendingMachine
-  attr_reader :products
+  attr_reader :products, :coins
 
   def initialize
     @products = default_products
+    @coins = [
+      Coin.new(1,10),
+      Coin.new(2,10),
+      Coin.new(5,10),
+      Coin.new(10,10),
+      Coin.new(20,10),
+      Coin.new(50,10),
+      Coin.new(100,10),
+      Coin.new(200,10),
+    ]
   end
 
 
   private
-  
+
   def default_products
     [
       Product.new('Coke',70,10),
