@@ -6,16 +6,7 @@ class VendingMachine
 
   def initialize
     @products = default_products
-    @coins = [
-      Coin.new(1,10),
-      Coin.new(2,10),
-      Coin.new(5,10),
-      Coin.new(10,10),
-      Coin.new(20,10),
-      Coin.new(50,10),
-      Coin.new(100,10),
-      Coin.new(200,10),
-    ]
+    @coins = default_coins
   end
 
 
@@ -28,6 +19,19 @@ class VendingMachine
       Product.new('7up',55,10),
       Product.new('Fanta',55,10),
       Product.new('Water',40,10)
+    ]
+  end
+
+  def default_coins
+    [
+      Coin.new(1,10),
+      Coin.new(2,10),
+      Coin.new(5,10),
+      Coin.new(10,10),
+      Coin.new(20,10),
+      Coin.new(50,10),
+      Coin.new(100,10),
+      Coin.new(200,10),
     ]
   end
 
