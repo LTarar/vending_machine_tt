@@ -7,8 +7,8 @@ class Product
     @quantity = quantity
   end
 
-  def release(amount)
-    @quantity -= amount
+  def release
+    @quantity -= 1
   end
 
   def reload(amount)

@@ -9,6 +9,11 @@ class VendingMachine
     @coins = default_coins
   end
 
+  def release_item(index)
+    item = @products[index]
+    item.release
+    item
+  end
 
   private
 

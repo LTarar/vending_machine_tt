@@ -17,7 +17,7 @@ describe Product do
 
   describe "#release" do
     it 'decreases the quantity of a product' do
-      expect { product.release(1) }.to change { product.quantity }.from(10).to(9)
+      expect { product.release }.to change { product.quantity }.from(10).to(9)
     end
   end
 
