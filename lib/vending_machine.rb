@@ -9,9 +9,9 @@ class VendingMachine
     @coins = default_coins
   end
 
-  def release_item(index)
+  def release_item(index,payment)
     item = @products[index]
-    item.release
+    item.price == payment ? item.release : item
     item
   end
 

@@ -4,8 +4,8 @@ describe VendingMachine do
   subject(:vending_machine) {VendingMachine.new}
 
   describe "#release_item" do
-    it 'releases the selected item' do
-      item_released = vending_machine.release_item(2)
+    it 'releases the selected item with correct payment' do
+      item_released = vending_machine.release_item(2,55)
       expect(item_released.name).to eq '7up'
       expect(item_released.quantity).to eq 9
     end

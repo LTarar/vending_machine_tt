@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-17T12:36:35+01:00">2019-07-17T12:36:35+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-17T12:49:35+01:00">2019-07-17T12:49:35+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -467,7 +467,7 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">  def release_item(index)</code>
+          <code class="ruby">  def release_item(index,payment)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
@@ -479,7 +479,7 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    item.release</code>
+          <code class="ruby">    item.price == payment ? item.release : item</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
@@ -1149,7 +1149,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">      item_released = vending_machine.release_item(2)</code>
+          <code class="ruby">      item_released = vending_machine.release_item(2,55)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
