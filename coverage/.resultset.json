@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Dropbox/Projects/cleo_tt/spec/change_spec.rb": [
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/change_spec.rb": [
         1,
         1,
         null,
@@ -22,7 +22,7 @@
         null,
         null
       ],
-      "/Users/student/Dropbox/Projects/cleo_tt/lib/change.rb": [
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/change.rb": [
         1,
         1,
         null,
@@ -69,7 +69,7 @@
         null,
         null
       ],
-      "/Users/student/Dropbox/Projects/cleo_tt/lib/coin.rb": [
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/coin.rb": [
         1,
         1,
         null,
@@ -88,7 +88,7 @@
         null,
         null
       ],
-      "/Users/student/Dropbox/Projects/cleo_tt/spec/coin_spec.rb": [
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/coin_spec.rb": [
         1,
         null,
         1,
@@ -116,7 +116,7 @@
         null,
         null
       ],
-      "/Users/student/Dropbox/Projects/cleo_tt/spec/product_spec.rb": [
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/product_spec.rb": [
         1,
         null,
         1,
@@ -148,14 +148,14 @@
         null,
         null
       ],
-      "/Users/student/Dropbox/Projects/cleo_tt/lib/product.rb": [
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/product.rb": [
         1,
         1,
         null,
         1,
-        30,
-        30,
-        30,
+        40,
+        40,
+        40,
         null,
         null,
         1,
@@ -168,7 +168,48 @@
         null,
         null
       ],
-      "/Users/student/Dropbox/Projects/cleo_tt/spec/vending_machine_spec.rb": [
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/stock_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/stock.rb": [
+        1,
+        1,
+        null,
+        1,
+        6,
+        null,
+        null,
+        1,
+        null,
+        1,
+        6,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/vending_machine_spec.rb": [
         1,
         null,
         1,
@@ -219,10 +260,11 @@
         null,
         null
       ],
-      "/Users/student/Dropbox/Projects/cleo_tt/lib/vending_machine.rb": [
-        null,
-        null,
-        null,
+      "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/vending_machine.rb": [
+        1,
+        1,
+        1,
+        1,
         null,
         1,
         1,
@@ -248,23 +290,11 @@
         1,
         1,
         1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        5,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1563377062
+    "timestamp": 1563460902
   }
 }

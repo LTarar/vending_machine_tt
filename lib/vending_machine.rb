@@ -1,18 +1,19 @@
-# require 'product'
-# require 'coin'
-# require 'change'
+require_relative 'product'
+require_relative 'coin'
+require_relative 'change'
+require_relative 'stock'
 
 class VendingMachine
   attr_reader :products, :coins
 
   def initialize
-    @products = default_products
+    @products = Stock.new.product_stock
     @coins = Change.new
   end
 
   def display_products 
     @products.each { |product|
-      product
+      print product
     }
   end
 
@@ -26,18 +27,6 @@ class VendingMachine
     item = @products[index]
     item.reload(amount)
     item
-  end
-
-  private
-
-  def default_products
-    [
-      Product.new('Coke',70),
-      Product.new('Pepsi',60), 
-      Product.new('7up',55),
-      Product.new('Fanta',55),
-      Product.new('Water',40)
-    ]
   end
 
 end
