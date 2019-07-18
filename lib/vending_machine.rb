@@ -13,19 +13,33 @@ class VendingMachine
 
   def start
     display_products
+    select_item
   end
 
   def display_products 
+    puts 'Please choose your drink:'
     @products.each { |product|
-      puts "Select #{product.name} for #{product.price}p"
+      puts "'#{product.name}' for #{product.price}p"
     }
   end
 
-  def release_item(index,payment)
-    item = @products[index]
-    item.release if item.price == payment
-    item
+  def select_item
+    puts "Please type in item name:"
+    item = gets
+    product_names_array = []
+
+    @products.each { |product|
+        product_names_array << product.name
+      }
+    
+    raise "Sorry, not available" unless product_names_array.include?item
   end
+
+  # def release_item(index,payment)
+  #   item = @products[index]
+  #   item.release if item.price == payment
+  #   item
+  # end
 
   def reload_item(index,amount)
     item = @products[index]
