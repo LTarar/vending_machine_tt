@@ -2,7 +2,7 @@ class Change
   attr_reader :coins
 
   def initialize
-    @coins = default_coins
+    @coins = coin_stock
   end
 
   def release_coin(denomination,amount)
@@ -29,7 +29,7 @@ class Change
 
   private
 
-  def default_coins
+  def coin_stock
     [
       Coin.new(1),
       Coin.new(2),

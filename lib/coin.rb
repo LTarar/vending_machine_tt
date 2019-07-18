@@ -1,7 +1,7 @@
 class Coin
   attr_reader :value, :quantity
 
-  def initialize(value,quantity=10)
+  def initialize(value,quantity=30)
     @value = value
     @quantity = quantity
   end

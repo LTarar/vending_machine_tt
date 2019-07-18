@@ -13,6 +13,7 @@
 - git clone 'https://github.com/WardahTarar/vending_machine_tt'
 - cd vending_machine_tt
 - run 'bundle'
+- run 'ruby app.rb'
 
 ## How to test?
 - run 'rspec'

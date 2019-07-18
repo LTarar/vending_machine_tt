@@ -1,14 +1,14 @@
-require_relative 'product'
-require_relative 'coin'
 require_relative 'change'
 require_relative 'stock'
+require_relative 'product'
+require_relative 'coin'
 
 class VendingMachine
   attr_reader :products, :coins
 
   def initialize
     @products = Stock.new.product_stock
-    @coins = Change.new
+    @coins = Change.new.coins
   end
 
   def start

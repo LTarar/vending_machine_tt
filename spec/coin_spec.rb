@@ -8,18 +8,18 @@ describe Coin do
   end
 
   it 'checks for coin quantity' do
-    expect(coin.quantity).to eq 10
+    expect(coin.quantity).to eq 30
   end
 
   describe "#release" do
     it 'decreases the quantity of a coin' do
-      expect { coin.release(3) }.to change { coin.quantity }.from(10).to(7)
+      expect { coin.release(3) }.to change { coin.quantity }.from(30).to(27)
     end
   end
 
   describe "#reload" do
     it 'increases the quantity of a coin' do
-      expect { coin.reload(2) }.to change { coin.quantity }.from(10).to(12)
+      expect { coin.reload(2) }.to change { coin.quantity }.from(30).to(32)
     end
   end
 
