@@ -9,6 +9,7 @@ class VendingMachine
   def initialize
     @products = Stock.new.product_stock
     @coins = Change.new.coins
+    @product_names = product_names
   end
 
   def start
@@ -26,13 +27,7 @@ class VendingMachine
   def select_item
     puts "Please type in item name:"
     item = gets
-    product_names_array = []
-
-    @products.each { |product|
-        product_names_array << product.name
-      }
-    
-    raise "Sorry, not available" unless product_names_array.include?item
+    raise "Sorry, not available" unless @product_names.include?(item)
   end
 
   # def release_item(index,payment)
@@ -47,4 +42,14 @@ class VendingMachine
     item
   end
 
+  private
+
+  def product_names
+    #object array to product names array
+    product_array = []
+    @products.each { |product|
+        product_array << product.name
+      }
+    product_array
+  end
 end
