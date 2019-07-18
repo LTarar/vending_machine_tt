@@ -11,9 +11,13 @@ class VendingMachine
     @coins = Change.new
   end
 
+  def start
+    display_products
+  end
+
   def display_products 
     @products.each { |product|
-      print product
+      puts "Select #{product.name} for #{product.price}p"
     }
   end
 
