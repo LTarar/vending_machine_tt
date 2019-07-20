@@ -5,6 +5,16 @@ class Stock
     @product_stock = load_products
   end
 
+  def release_product(index)
+    product = @product_stock[index]
+    product.release
+  end
+
+   def reload_product(index, amount)
+    product = @product_stock[index]
+    product.reload(amount)
+  end
+
   private
 
   def load_products
