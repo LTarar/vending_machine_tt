@@ -26,7 +26,7 @@ class Change
     coin = @coins[counter]
     coin.reload(amount)
   end
-
+  
   private
 
   def coin_stock
