@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'stock'
 require 'helper'
 
@@ -20,7 +22,7 @@ describe Stock do
   describe '#reload_product' do
     it 'Product reloads properly' do
       mock_products = create_mock(product)
-      stock.reload_product(1,10)
+      stock.reload_product(1, 10)
       expect(product).to have_received(:reload).with(10)
     end
   end

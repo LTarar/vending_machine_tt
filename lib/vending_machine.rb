@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'change'
 require_relative 'stock'
 require_relative 'product'
@@ -20,7 +22,7 @@ class VendingMachine
     end
   end
 
-  def display_products 
+  def display_products
     puts 'Please choose your drink:'
     @products.each_with_index do |product, index|
       if product.quantity.positive?
@@ -30,12 +32,12 @@ class VendingMachine
   end
 
   def select_item
-    puts "Please type in item name:"
+    puts 'Please type in item name:'
     item = gets.chomp.downcase
-    raise "Sorry, not available" unless @product_names.include?(item)
+    raise 'Sorry, not available' unless @product_names.include?(item)
   end
 
-  def reload_item(index,amount)
+  def reload_item(index, amount)
     item = @products[index]
     item.reload(amount)
     item
@@ -45,9 +47,9 @@ class VendingMachine
 
   def product_names
     product_array = []
-    @products.each { |product|
-        product_array << product.name.downcase
-      }
+    @products.each do |product|
+      product_array << product.name.downcase
+    end
     product_array
   end
 end

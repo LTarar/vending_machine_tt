@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'change'
 require 'helper'
 
@@ -25,7 +27,7 @@ describe Change do
       coins_mock = [coin]
       allow_any_instance_of(Change).to receive(:coin_stock) { coins_mock }
       change.release_coin(1, 1)
-      
+
       expect(coin).to have_received(:release).with(1)
     end
   end

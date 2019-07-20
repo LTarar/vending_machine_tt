@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class Coin
   attr_reader :value, :quantity
 
-  def initialize(value,quantity=30)
+  def initialize(value, quantity = 30)
     @value = value
     @quantity = quantity
   end
@@ -13,5 +15,4 @@ class Coin
   def reload(amount)
     @quantity += amount
   end
-  
 end

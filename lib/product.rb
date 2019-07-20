@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class Product
   attr_reader :name, :price, :quantity
 
-  def initialize(name,price,quantity=10)
+  def initialize(name, price, quantity = 10)
     @name = name
     @price = price
     @quantity = quantity
@@ -14,5 +16,4 @@ class Product
   def reload(amount)
     @quantity += amount
   end
-
 end

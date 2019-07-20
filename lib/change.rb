@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Change
   attr_reader :coins
 
@@ -5,28 +7,24 @@ class Change
     @coins = coin_stock
   end
 
-  def release_coin(denomination,amount)
+  def release_coin(denomination, amount)
     counter = 0
     @coins.each_with_index do |coin, index|
-      if coin.value == denomination
-        counter = index
-      end
+      counter = index if coin.value == denomination
     end
     coin = @coins[counter]
     coin.release(amount)
   end
 
-  def insert_coin(denomination,amount)
+  def insert_coin(denomination, amount)
     counter = 0
     @coins.each_with_index do |coin, index|
-      if coin.value == denomination
-        counter = index
-      end
+      counter = index if coin.value == denomination
     end
     coin = @coins[counter]
     coin.reload(amount)
   end
-  
+
   private
 
   def coin_stock
@@ -38,8 +36,7 @@ class Change
       Coin.new(20),
       Coin.new(50),
       Coin.new(100),
-      Coin.new(200),
+      Coin.new(200)
     ]
   end
-
 end
