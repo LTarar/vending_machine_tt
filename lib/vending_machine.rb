@@ -13,8 +13,10 @@ class VendingMachine
   end
 
   def start
-    display_products
-    select_item
+    loop do
+      display_products
+      select_item
+    end
   end
 
   def display_products 

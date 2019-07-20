@@ -1,15 +1,7 @@
 require 'vending_machine'
 
 describe VendingMachine do
-  subject(:vending_machine) {VendingMachine.new}
-
-  # describe "#release_item" do
-  #   it 'releases the selected item with correct payment' do
-  #     item_released = vending_machine.release_item(2,55)
-  #     expect(item_released.name).to eq '7up'
-  #     expect(item_released.quantity).to eq 9
-  #   end
-  # end
+  let(:vending_machine) {VendingMachine.new}
 
   describe "#reload_item" do
     it 'reloads the selected item' do
@@ -55,7 +47,5 @@ describe VendingMachine do
       allow_any_instance_of(Kernel).to receive(:gets).and_return('meetCleo')
       expect { vending_machine.select_item }.to raise_error "Sorry, not available"
     end
-    
   end
-
 end
