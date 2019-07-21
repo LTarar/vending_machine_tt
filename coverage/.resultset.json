@@ -2,6 +2,8 @@
   "RSpec": {
     "coverage": {
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/change_spec.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -36,6 +38,8 @@
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/change.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -47,8 +51,6 @@
         1,
         1,
         1,
-        0,
-        null,
         null,
         1,
         1,
@@ -58,8 +60,6 @@
         1,
         1,
         1,
-        0,
-        null,
         null,
         1,
         1,
@@ -79,10 +79,11 @@
         null,
         null,
         null,
-        null,
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/helper.rb": [
+        null,
+        null,
         1,
         2,
         4,
@@ -94,6 +95,8 @@
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/coin_spec.rb": [
+        null,
+        null,
         1,
         null,
         1,
@@ -118,10 +121,11 @@
         4,
         null,
         null,
-        null,
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/coin.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -136,11 +140,12 @@
         null,
         1,
         1,
-        null,
         null,
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/product_spec.rb": [
+        null,
+        null,
         1,
         null,
         1,
@@ -169,10 +174,11 @@
         4,
         null,
         null,
-        null,
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/product.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -189,10 +195,11 @@
         1,
         2,
         null,
-        null,
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/stock_spec.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -222,6 +229,8 @@
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/stock.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -253,6 +262,8 @@
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/spec/vending_machine_spec.rb": [
+        null,
+        null,
         1,
         null,
         1,
@@ -306,6 +317,8 @@
         null
       ],
       "/Users/student/Dropbox/Projects/techie/vending_machine_tt/lib/vending_machine.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -361,6 +374,6 @@
         null
       ]
     },
-    "timestamp": 1563651018
+    "timestamp": 1563704740
   }
 }
