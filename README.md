@@ -10,7 +10,7 @@
 
 ## Project setup
 - go to your terminal
-- git clone 'https://github.com/wlt-93/vending_machine_tt'
+- git clone 'https://github.com/ltarar/vending_machine_tt'
 - cd vending_machine_tt
 - run 'bundle'
 - run 'ruby app.rb'
